@@ -1,0 +1,26 @@
+/node_modules
+/.next
+/out
+/build
+
+# Jamais de secret dans le dépôt — c'est l'une des causes de la compromission
+# de l'ancien site (identifiants de production en clair dans local/config).
+.env
+.env.local
+.env.*.local
+
+*.pem
+npm-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+.DS_Store
+Thumbs.db
+
+next-env.d.ts
+/.idea
+/.vscode
+tsconfig.tsbuildinfo
+
+# Outils locaux
+.claude/
